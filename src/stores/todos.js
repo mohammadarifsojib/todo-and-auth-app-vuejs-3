@@ -29,7 +29,7 @@ export const useTodoStore = defineStore("counter", () => {
 	// Actions for Todos
 	const actions = reactive({
 		activeTodos: computed(() => {
-			return todos.value.filter((todo) => todo.completed === false);
+			return todos.value.filter((todo) => todo.completed === false).reverse();
 		}),
 		completeTodos: computed(() => {
 			return todos.value.filter((todo) => todo.completed === true).reverse();
