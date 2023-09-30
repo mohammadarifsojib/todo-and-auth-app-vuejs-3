@@ -33,7 +33,7 @@ const showConfirmation = (id) => {
 		if (result.isConfirmed) {
 			const todoStore = useTodoStore();
 			todoStore.actions.removeTodo(id);
-			Swal.fire("Saved!", "", "Task is deleted!");
+			Swal.fire("Task is deleted!", "", "success");
 		} else if (result.isDenied) {
 			Swal.fire("Your task is not deleted!", "", "info");
 		}
