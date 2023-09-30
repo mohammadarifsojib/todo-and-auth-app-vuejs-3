@@ -24,7 +24,7 @@ const showAlert = (icon = "success", title = "Signed in successfully") => {
 // Show Confirm function
 const showConfirmation = (id) => {
 	Swal.fire({
-		title: "Do you want to save the changes?",
+		title: "Are you sure to delete this task?",
 		showDenyButton: true,
 		showCancelButton: true,
 		confirmButtonText: "Delete!",
